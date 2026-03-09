@@ -12,5 +12,6 @@ export default defineConfig({
   test: {
     environment: "happy-dom",
     setupFiles: ["./vitest.setup.mts"],
+    exclude: ["**/node_modules/**", "**/.worktrees/**"],
   },
 });
