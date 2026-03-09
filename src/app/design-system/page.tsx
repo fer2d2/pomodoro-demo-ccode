@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@/components/Button";
+import { TimerRing } from "@/components/TimerRing";
 import { useTheme } from "@/hooks/useTheme";
 import { Play, RotateCcw, Settings, Moon, Sun } from "lucide-react";
 
@@ -34,6 +35,19 @@ export default function DesignSystemPage() {
             <Button variant="secondary">Secondary</Button>
             <Button variant="ghost" icon={Settings}>Settings</Button>
             <Button variant="ghost">Ghost</Button>
+          </div>
+        </section>
+
+        <section className="mt-spacing-3xl">
+          <h2 className="mb-spacing-sm font-display text-xl text-text-primary">
+            Timer
+          </h2>
+          <p className="mb-spacing-lg text-md text-text-secondary">
+            Circular timer with progress ring and countdown display
+          </p>
+
+          <div className="flex flex-wrap items-center gap-spacing-3xl">
+            <TimerRing timeDisplay="25:00" label="minutes remaining" progress={0.75} />
           </div>
         </section>
       </div>
