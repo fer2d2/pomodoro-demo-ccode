@@ -17,6 +17,8 @@
   --color-text-secondary: #8A8A8A;
   --color-text-muted: #ADADAD;
   --color-danger: #D4544E;
+  --color-accent-hover: #6B7D71;
+  --color-surface-hover: #EBE8E2;
 
   /* Font sizes */
   --text-xs: 11px;
@@ -51,4 +53,20 @@
   --icon-sm: 14px;
   --icon-md: 18px;
   --icon-lg: 24px;
+}
+
+/* Dark theme overrides */
+.dark {
+  --color-accent: #8FA89A;
+  --color-bg-page: #1A1A1A;
+  --color-bg-card: #242424;
+  --color-bg-surface: #2A2A2A;
+  --color-bg-muted: #333333;
+  --color-border: #3D3D3D;
+  --color-text-primary: #E8E8E8;
+  --color-text-secondary: #9A9A9A;
+  --color-text-muted: #666666;
+  --color-danger: #E06B65;
+  --color-accent-hover: #A3BCAD;
+  --color-surface-hover: #353535;
 }
