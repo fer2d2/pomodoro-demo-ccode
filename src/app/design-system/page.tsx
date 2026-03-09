@@ -2,7 +2,10 @@
 
 import { Button } from "@/components/Button";
 import { useTheme } from "@/hooks/useTheme";
-import { Play, RotateCcw, Settings, Moon, Sun } from "lucide-react";
+import { IconButton } from "@/components/IconButton";
+import { Divider } from "@/components/Divider";
+import { SessionDot } from "@/components/SessionDot";
+import { Play, RotateCcw, Settings, Moon, Sun, Minus, Plus } from "lucide-react";
 
 export default function DesignSystemPage() {
   const { theme, toggle } = useTheme();
@@ -34,6 +37,25 @@ export default function DesignSystemPage() {
             <Button variant="secondary">Secondary</Button>
             <Button variant="ghost" icon={Settings}>Settings</Button>
             <Button variant="ghost">Ghost</Button>
+          </div>
+        </section>
+
+        <section className="mt-spacing-3xl">
+          <h2 className="mb-spacing-sm font-display text-xl text-text-primary">
+            Controls
+          </h2>
+          <p className="mb-spacing-lg text-md text-text-secondary">
+            Icon buttons, steppers, dividers, and session indicators
+          </p>
+
+          <div className="flex items-center gap-spacing-2xl">
+            <IconButton icon={Minus} aria-label="Decrease" />
+            <IconButton icon={Plus} aria-label="Increase" />
+            <Divider className="flex-1" />
+            <SessionDot active aria-label="Session 1 complete" />
+            <SessionDot aria-label="Session 2 pending" />
+            <SessionDot aria-label="Session 3 pending" />
+            <SessionDot aria-label="Session 4 pending" />
           </div>
         </section>
       </div>
