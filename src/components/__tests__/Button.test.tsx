@@ -48,13 +48,27 @@ describe("Button", () => {
     expect(handleClick).toHaveBeenCalledOnce();
   });
 
-  it("forwards disabled prop", () => {
+  it("forwards disabled prop and applies disabled styling", () => {
     render(<Button disabled>Disabled</Button>);
-    expect(screen.getByRole("button")).toBeDisabled();
+    const btn = screen.getByRole("button");
+    expect(btn).toBeDisabled();
+    expect(btn.className).toContain("disabled:opacity-50");
+    expect(btn.className).toContain("disabled:pointer-events-none");
   });
 
-  it("forwards type prop", () => {
+  it("defaults to type button", () => {
+    render(<Button>Click</Button>);
+    expect(screen.getByRole("button")).toHaveAttribute("type", "button");
+  });
+
+  it("allows type override to submit", () => {
     render(<Button type="submit">Submit</Button>);
     expect(screen.getByRole("button")).toHaveAttribute("type", "submit");
+  });
+
+  it("has focus-visible outline classes", () => {
+    render(<Button>Focus</Button>);
+    const btn = screen.getByRole("button");
+    expect(btn.className).toContain("focus-visible:outline-2");
   });
 });
