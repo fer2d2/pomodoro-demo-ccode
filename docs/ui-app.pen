@@ -1,0 +1,1191 @@
+{
+  "version": "2.8",
+  "children": [
+    {
+      "type": "frame",
+      "id": "bi8Au",
+      "x": 0,
+      "y": 0,
+      "name": "Pomodoro App",
+      "clip": true,
+      "width": 800,
+      "height": 760,
+      "fill": "$bg-page",
+      "layout": "vertical",
+      "justifyContent": "center",
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "DA3Ed",
+          "name": "Card",
+          "width": 420,
+          "fill": "$bg-card",
+          "cornerRadius": 20,
+          "stroke": {
+            "thickness": 1,
+            "fill": "$border"
+          },
+          "layout": "vertical",
+          "gap": 32,
+          "padding": 40,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "5oge4",
+              "name": "Header",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 4,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "xA9DI",
+                  "name": "title",
+                  "fill": "$text-primary",
+                  "content": "Pomodoro",
+                  "fontFamily": "Fraunces",
+                  "fontSize": 32,
+                  "fontWeight": "normal",
+                  "letterSpacing": -1
+                },
+                {
+                  "type": "text",
+                  "id": "SWVt8",
+                  "name": "subtitle",
+                  "fill": "$text-secondary",
+                  "content": "Stay focused, one session at a time",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "id": "M9ool",
+              "type": "ref",
+              "ref": "ANrKK",
+              "width": "fill_container",
+              "name": "tabBarInst"
+            },
+            {
+              "id": "VfmVo",
+              "type": "ref",
+              "ref": "ekX0h",
+              "name": "timerInst",
+              "descendants": {
+                "ZAOK3": {
+                  "content": "25:00"
+                },
+                "KOELx": {
+                  "content": "minutes remaining"
+                }
+              }
+            },
+            {
+              "type": "frame",
+              "id": "y94ZR",
+              "name": "Actions",
+              "width": "fill_container",
+              "gap": 12,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "id": "M4Nvk",
+                  "type": "ref",
+                  "ref": "S3vdp",
+                  "width": 140,
+                  "justifyContent": "center",
+                  "name": "startBtn",
+                  "descendants": {
+                    "xF9L3": {
+                      "iconFontName": "play"
+                    },
+                    "01u16": {
+                      "content": "Start"
+                    }
+                  }
+                },
+                {
+                  "id": "u0BDq",
+                  "type": "ref",
+                  "ref": "rEVSC",
+                  "width": 140,
+                  "justifyContent": "center",
+                  "name": "resetBtn",
+                  "descendants": {
+                    "JcPFE": {
+                      "iconFontName": "rotate-ccw"
+                    },
+                    "swJyg": {
+                      "content": "Reset"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "id": "cFCyl",
+              "type": "ref",
+              "ref": "okyyf",
+              "width": "fill_container",
+              "name": "dividerInst"
+            },
+            {
+              "type": "frame",
+              "id": "KpWSY",
+              "name": "Settings",
+              "width": "fill_container",
+              "gap": 40,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "id": "PFz2N",
+                  "type": "ref",
+                  "ref": "UILug",
+                  "name": "focusInput",
+                  "descendants": {
+                    "QJ5v0": {
+                      "content": "FOCUS TIME"
+                    },
+                    "TfZbD": {
+                      "content": "25 min"
+                    }
+                  }
+                },
+                {
+                  "id": "riHL1",
+                  "type": "ref",
+                  "ref": "UILug",
+                  "name": "breakInput",
+                  "descendants": {
+                    "QJ5v0": {
+                      "content": "BREAK TIME"
+                    },
+                    "TfZbD": {
+                      "content": "5 min"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "qZE6Q",
+              "name": "Footer",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "id": "MZ3Hq",
+                  "type": "ref",
+                  "ref": "cmLVL",
+                  "name": "soundInst",
+                  "descendants": {
+                    "2x1fe": {
+                      "iconFontName": "volume-2"
+                    },
+                    "TBB2V": {
+                      "content": "Sound on"
+                    }
+                  }
+                },
+                {
+                  "id": "nJ727",
+                  "type": "ref",
+                  "ref": "8hZaZ",
+                  "name": "sessInst",
+                  "descendants": {
+                    "p661k": {
+                      "content": "2/4"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "nTBI5",
+      "x": 0,
+      "y": 860,
+      "name": "Design System",
+      "width": 1400,
+      "fill": "#F8F7F4",
+      "layout": "vertical",
+      "gap": 48,
+      "padding": 48,
+      "children": [
+        {
+          "type": "text",
+          "id": "QOcfq",
+          "name": "dsTitle",
+          "fill": "$text-primary",
+          "content": "Design System — Pomodoro",
+          "fontFamily": "$font-display",
+          "fontSize": 28,
+          "fontWeight": "normal",
+          "letterSpacing": -1
+        },
+        {
+          "type": "text",
+          "id": "4g353",
+          "name": "dsSubtitle",
+          "fill": "$text-secondary",
+          "content": "Reusable components for implementation",
+          "fontFamily": "$font-primary",
+          "fontSize": "$font-size-lg",
+          "fontWeight": "normal"
+        },
+        {
+          "type": "frame",
+          "id": "BUmsr",
+          "name": "Buttons",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 16,
+          "children": [
+            {
+              "type": "text",
+              "id": "hDmBY",
+              "name": "btnSectionLabel",
+              "fill": "$text-primary",
+              "content": "Buttons",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "dYyXA",
+              "name": "btnSectionDesc",
+              "fill": "$text-secondary",
+              "content": "Primary, Secondary, and Ghost button variants",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "IsUA9",
+              "name": "Button Variants",
+              "gap": 24,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "S3vdp",
+                  "name": "Component/Button/Primary",
+                  "reusable": true,
+                  "fill": "$accent",
+                  "cornerRadius": 24,
+                  "gap": 8,
+                  "padding": [
+                    12,
+                    24
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "xF9L3",
+                      "name": "btnPrimaryIcon",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "play",
+                      "iconFontFamily": "lucide",
+                      "fill": "$white"
+                    },
+                    {
+                      "type": "text",
+                      "id": "01u16",
+                      "name": "btnPrimaryLabel",
+                      "fill": "$white",
+                      "content": "Start",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "rEVSC",
+                  "name": "Component/Button/Secondary",
+                  "reusable": true,
+                  "fill": "$bg-surface",
+                  "cornerRadius": 24,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border"
+                  },
+                  "gap": 8,
+                  "padding": [
+                    12,
+                    24
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "JcPFE",
+                      "name": "btnSecIcon",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "settings",
+                      "iconFontFamily": "lucide",
+                      "fill": "$text-secondary"
+                    },
+                    {
+                      "type": "text",
+                      "id": "swJyg",
+                      "name": "btnSecLabel",
+                      "fill": "$text-primary",
+                      "content": "Reset",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "lcxyY",
+                  "name": "Component/Button/Ghost",
+                  "reusable": true,
+                  "cornerRadius": 24,
+                  "gap": 8,
+                  "padding": [
+                    12,
+                    24
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "4csic",
+                      "name": "btnGhostIcon",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "settings",
+                      "iconFontFamily": "lucide",
+                      "fill": "$text-secondary"
+                    },
+                    {
+                      "type": "text",
+                      "id": "YwZBE",
+                      "name": "btnGhostLabel",
+                      "fill": "$text-primary",
+                      "content": "Settings",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "jIYRV",
+          "name": "Tabs",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 16,
+          "children": [
+            {
+              "type": "text",
+              "id": "3QhB0",
+              "name": "tabSectionLabel",
+              "fill": "$text-primary",
+              "content": "Tabs",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "ESWtA",
+              "name": "tabSectionDesc",
+              "fill": "$text-secondary",
+              "content": "Tab bar with active and inactive states",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "k8co2",
+              "name": "Tab Variants",
+              "width": 400,
+              "gap": 24,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "bFXSZ",
+                  "name": "Component/Tab/Active",
+                  "reusable": true,
+                  "width": "fill_container",
+                  "fill": "$bg-card",
+                  "cornerRadius": 20,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border"
+                  },
+                  "gap": 6,
+                  "padding": [
+                    8,
+                    20
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "WfhNe",
+                      "name": "tabIcon",
+                      "width": 14,
+                      "height": 14,
+                      "iconFontName": "brain",
+                      "iconFontFamily": "lucide",
+                      "fill": "$accent"
+                    },
+                    {
+                      "type": "text",
+                      "id": "X621o",
+                      "name": "tabLabel",
+                      "fill": "$text-primary",
+                      "content": "Focus",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "sHztz",
+                  "name": "Component/Tab/Inactive",
+                  "reusable": true,
+                  "width": "fill_container",
+                  "cornerRadius": 20,
+                  "gap": 6,
+                  "padding": [
+                    8,
+                    20
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "9rwOo",
+                      "name": "tabIcon",
+                      "width": 14,
+                      "height": 14,
+                      "iconFontName": "coffee",
+                      "iconFontFamily": "lucide",
+                      "fill": "$text-muted"
+                    },
+                    {
+                      "type": "text",
+                      "id": "0Qlpy",
+                      "name": "tabLabel",
+                      "fill": "$text-secondary",
+                      "content": "Break",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ANrKK",
+                  "name": "Component/TabBar",
+                  "reusable": true,
+                  "width": 340,
+                  "fill": "$bg-surface",
+                  "cornerRadius": 24,
+                  "padding": 4,
+                  "children": [
+                    {
+                      "id": "Lq2Fe",
+                      "type": "ref",
+                      "ref": "bFXSZ",
+                      "name": "tabBarActive"
+                    },
+                    {
+                      "id": "oD8kS",
+                      "type": "ref",
+                      "ref": "sHztz",
+                      "name": "tabBarInactive"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "cNTkX",
+          "name": "Controls",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 16,
+          "children": [
+            {
+              "type": "text",
+              "id": "uFwIw",
+              "name": "controlsLabel",
+              "fill": "$text-primary",
+              "content": "Controls",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "Lxoth",
+              "name": "controlsDesc",
+              "fill": "$text-secondary",
+              "content": "Icon buttons, steppers, dividers, and session indicators",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "t2Dix",
+              "name": "Control Variants",
+              "gap": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Z1lZZ",
+                  "name": "Component/IconButton/Stepper",
+                  "reusable": true,
+                  "width": 32,
+                  "height": 32,
+                  "fill": "$bg-surface",
+                  "cornerRadius": 16,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border"
+                  },
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "0bbUC",
+                      "name": "stepperIcon",
+                      "width": 14,
+                      "height": 14,
+                      "iconFontName": "minus",
+                      "iconFontFamily": "lucide",
+                      "fill": "$text-secondary"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "okyyf",
+                  "name": "Component/Divider",
+                  "reusable": true,
+                  "width": 200,
+                  "height": 1,
+                  "fill": "$border"
+                },
+                {
+                  "type": "ellipse",
+                  "id": "zlTck",
+                  "name": "Component/SessionDot/Active",
+                  "reusable": true,
+                  "fill": "$accent",
+                  "width": 8,
+                  "height": 8
+                },
+                {
+                  "type": "ellipse",
+                  "id": "0wnYi",
+                  "name": "Component/SessionDot/Inactive",
+                  "reusable": true,
+                  "fill": "$bg-surface",
+                  "width": 8,
+                  "height": 8,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "6nf2M",
+          "name": "Inputs",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 16,
+          "children": [
+            {
+              "type": "text",
+              "id": "0Sv64",
+              "name": "inputsLabel",
+              "fill": "$text-primary",
+              "content": "Inputs",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "D88YC",
+              "name": "inputsDesc",
+              "fill": "$text-secondary",
+              "content": "Time input with stepper controls",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "uxsRn",
+              "name": "Input Variants",
+              "gap": 40,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "UILug",
+                  "name": "Component/TimeInput",
+                  "reusable": true,
+                  "layout": "vertical",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "QJ5v0",
+                      "name": "timeLabel",
+                      "fill": "$text-secondary",
+                      "content": "Focus Time",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "500",
+                      "letterSpacing": 0.5
+                    },
+                    {
+                      "type": "frame",
+                      "id": "xT6zt",
+                      "name": "timeRow",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "CHztH",
+                          "name": "minusBtn",
+                          "width": 32,
+                          "height": 32,
+                          "fill": "$bg-surface",
+                          "cornerRadius": 16,
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "$border"
+                          },
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon_font",
+                              "id": "iBZAw",
+                              "name": "minusIcon",
+                              "width": 14,
+                              "height": 14,
+                              "iconFontName": "minus",
+                              "iconFontFamily": "lucide",
+                              "fill": "$text-secondary"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "K6WZI",
+                          "name": "timeValue",
+                          "width": 64,
+                          "height": 32,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "TfZbD",
+                              "name": "timeText",
+                              "fill": "$text-primary",
+                              "content": "25 min",
+                              "fontFamily": "IBM Plex Mono",
+                              "fontSize": 15,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "MWDeP",
+                          "name": "plusBtn",
+                          "width": 32,
+                          "height": 32,
+                          "fill": "$bg-surface",
+                          "cornerRadius": 16,
+                          "stroke": {
+                            "thickness": 1,
+                            "fill": "$border"
+                          },
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "icon_font",
+                              "id": "lpf2y",
+                              "name": "plusIcon",
+                              "width": 14,
+                              "height": 14,
+                              "iconFontName": "plus",
+                              "iconFontFamily": "lucide",
+                              "fill": "$text-secondary"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "8ucPg",
+          "name": "Timer",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 16,
+          "children": [
+            {
+              "type": "text",
+              "id": "Wketc",
+              "name": "timerLabel",
+              "fill": "$text-primary",
+              "content": "Timer",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "yrX6H",
+              "name": "timerDesc",
+              "fill": "$text-secondary",
+              "content": "Circular timer with progress ring and countdown display",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "B6bgK",
+              "name": "Timer Variants",
+              "gap": 40,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "ekX0h",
+                  "name": "Component/TimerRing",
+                  "reusable": true,
+                  "width": 220,
+                  "height": 220,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "ellipse",
+                      "id": "w8wN0",
+                      "x": 0,
+                      "y": 0,
+                      "name": "ringBg",
+                      "fill": "transparent",
+                      "width": 220,
+                      "height": 220,
+                      "stroke": {
+                        "thickness": 6,
+                        "fill": "$bg-surface"
+                      }
+                    },
+                    {
+                      "type": "ellipse",
+                      "id": "49hY6",
+                      "x": 0,
+                      "y": 0,
+                      "name": "ringProgress",
+                      "startAngle": 90,
+                      "sweepAngle": 270,
+                      "fill": "transparent",
+                      "width": 220,
+                      "height": 220,
+                      "stroke": {
+                        "thickness": 6,
+                        "cap": "round",
+                        "fill": "$accent"
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "1BPNx",
+                      "x": 0,
+                      "y": 0,
+                      "name": "timerCenter",
+                      "width": 220,
+                      "height": 220,
+                      "layout": "vertical",
+                      "gap": 4,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ZAOK3",
+                          "name": "timerTime",
+                          "fill": "$text-primary",
+                          "content": "25:00",
+                          "fontFamily": "IBM Plex Mono",
+                          "fontSize": 48,
+                          "fontWeight": "500",
+                          "letterSpacing": -1
+                        },
+                        {
+                          "type": "text",
+                          "id": "KOELx",
+                          "name": "timerLabel",
+                          "fill": "$text-secondary",
+                          "content": "minutes remaining",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "DzWN9",
+          "name": "Layout",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 16,
+          "children": [
+            {
+              "type": "text",
+              "id": "KMZcn",
+              "name": "layoutLabel",
+              "fill": "$text-primary",
+              "content": "Layout",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "2PMMf",
+              "name": "layoutDesc",
+              "fill": "$text-secondary",
+              "content": "Card container, sound toggle, and session counter",
+              "fontFamily": "Inter",
+              "fontSize": 13,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "Prfns",
+              "name": "Layout Variants",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "cmLVL",
+                  "name": "Component/SoundToggle",
+                  "reusable": true,
+                  "gap": 6,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "2x1fe",
+                      "name": "soundIcon",
+                      "width": 14,
+                      "height": 14,
+                      "iconFontName": "volume-2",
+                      "iconFontFamily": "lucide",
+                      "fill": "$accent"
+                    },
+                    {
+                      "type": "text",
+                      "id": "TBB2V",
+                      "name": "soundLabel",
+                      "fill": "$text-secondary",
+                      "content": "Sound on",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "8hZaZ",
+                  "name": "Component/SessionCounter",
+                  "reusable": true,
+                  "gap": 6,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "id": "xBHUM",
+                      "type": "ref",
+                      "ref": "zlTck",
+                      "name": "sd1"
+                    },
+                    {
+                      "id": "W0GND",
+                      "type": "ref",
+                      "ref": "zlTck",
+                      "name": "sd2"
+                    },
+                    {
+                      "id": "2Uy1m",
+                      "type": "ref",
+                      "ref": "0wnYi",
+                      "name": "sd3"
+                    },
+                    {
+                      "id": "riss9",
+                      "type": "ref",
+                      "ref": "0wnYi",
+                      "name": "sd4"
+                    },
+                    {
+                      "type": "text",
+                      "id": "p661k",
+                      "name": "sessionLabel",
+                      "fill": "$text-secondary",
+                      "content": "2/4",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "accent": {
+      "type": "color",
+      "value": "#7C9082"
+    },
+    "accent-hover": {
+      "type": "color",
+      "value": "#6B7F71"
+    },
+    "accent-tint": {
+      "type": "color",
+      "value": "#7C908226"
+    },
+    "bg-card": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "bg-muted": {
+      "type": "color",
+      "value": "#F0EDE8"
+    },
+    "bg-page": {
+      "type": "color",
+      "value": "#FAF8F5"
+    },
+    "bg-surface": {
+      "type": "color",
+      "value": "#F5F3EF"
+    },
+    "border": {
+      "type": "color",
+      "value": "#E8E4DF"
+    },
+    "border-subtle": {
+      "type": "color",
+      "value": "#F0EDE8"
+    },
+    "danger": {
+      "type": "color",
+      "value": "#D4544E"
+    },
+    "danger-tint": {
+      "type": "color",
+      "value": "#D4544E15"
+    },
+    "text-body": {
+      "type": "color",
+      "value": "#5A5A5A"
+    },
+    "text-muted": {
+      "type": "color",
+      "value": "#ADADAD"
+    },
+    "text-primary": {
+      "type": "color",
+      "value": "#2D2D2D"
+    },
+    "text-secondary": {
+      "type": "color",
+      "value": "#8A8A8A"
+    },
+    "white": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "font-display": {
+      "type": "string",
+      "value": "Fraunces"
+    },
+    "font-mono": {
+      "type": "string",
+      "value": "IBM Plex Mono"
+    },
+    "font-primary": {
+      "type": "string",
+      "value": "Inter"
+    },
+    "font-size-2xl": {
+      "type": "number",
+      "value": 20
+    },
+    "font-size-3xl": {
+      "type": "number",
+      "value": 28
+    },
+    "font-size-4xl": {
+      "type": "number",
+      "value": 32
+    },
+    "font-size-lg": {
+      "type": "number",
+      "value": 14
+    },
+    "font-size-md": {
+      "type": "number",
+      "value": 13
+    },
+    "font-size-sm": {
+      "type": "number",
+      "value": 12
+    },
+    "font-size-timer": {
+      "type": "number",
+      "value": 48
+    },
+    "font-size-xl": {
+      "type": "number",
+      "value": 16
+    },
+    "font-size-xs": {
+      "type": "number",
+      "value": 11
+    },
+    "icon-lg": {
+      "type": "number",
+      "value": 24
+    },
+    "icon-md": {
+      "type": "number",
+      "value": 18
+    },
+    "icon-sm": {
+      "type": "number",
+      "value": 14
+    },
+    "radius-lg": {
+      "type": "number",
+      "value": 16
+    },
+    "radius-md": {
+      "type": "number",
+      "value": 12
+    },
+    "radius-pill": {
+      "type": "number",
+      "value": 9999
+    },
+    "radius-sm": {
+      "type": "number",
+      "value": 8
+    },
+    "radius-xl": {
+      "type": "number",
+      "value": 20
+    },
+    "spacing-2xl": {
+      "type": "number",
+      "value": 32
+    },
+    "spacing-3xl": {
+      "type": "number",
+      "value": 40
+    },
+    "spacing-lg": {
+      "type": "number",
+      "value": 16
+    },
+    "spacing-md": {
+      "type": "number",
+      "value": 12
+    },
+    "spacing-sm": {
+      "type": "number",
+      "value": 8
+    },
+    "spacing-xl": {
+      "type": "number",
+      "value": 24
+    },
+    "spacing-xs": {
+      "type": "number",
+      "value": 4
+    }
+  }
+}
