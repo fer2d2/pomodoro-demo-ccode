@@ -13,7 +13,7 @@ export function TimerRing({ timeDisplay, label, progress }: TimerRingProps) {
   const offset = CIRCUMFERENCE * (1 - progress);
 
   return (
-    <div role="timer" className="relative" style={{ width: SIZE, height: SIZE }}>
+    <div role="timer" aria-label={label} className="relative" style={{ width: SIZE, height: SIZE }}>
       <svg width={SIZE} height={SIZE} className="-rotate-90">
         <circle
           cx={SIZE / 2}
