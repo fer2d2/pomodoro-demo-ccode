@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Button } from "@/components/Button";
 import { TabBar } from "@/components/TabBar";
+import { TimerRing } from "@/components/TimerRing";
 import { useTheme } from "@/hooks/useTheme";
 import { Play, RotateCcw, Settings, Moon, Sun, Clock, Coffee } from "lucide-react";
 
@@ -57,6 +58,19 @@ export default function DesignSystemPage() {
             value={activeTab}
             onChange={setActiveTab}
           />
+        </section>
+
+        <section className="mt-spacing-3xl">
+          <h2 className="mb-spacing-sm font-display text-xl text-text-primary">
+            Timer
+          </h2>
+          <p className="mb-spacing-lg text-md text-text-secondary">
+            Circular timer with progress ring and countdown display
+          </p>
+
+          <div className="flex flex-wrap items-center gap-spacing-3xl">
+            <TimerRing timeDisplay="25:00" label="minutes remaining" progress={0.75} />
+          </div>
         </section>
       </div>
     </main>
