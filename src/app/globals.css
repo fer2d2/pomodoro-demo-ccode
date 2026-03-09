@@ -67,16 +67,6 @@
   --color-text-secondary: #9A9A9A;
   --color-text-muted: #666666;
   --color-danger: #E06B65;
-}
-
-/* Button hover colors — light */
-:root {
-  --color-accent-hover: #6B7D71;
-  --color-surface-hover: #EBE8E2;
-}
-
-/* Button hover colors — dark */
-.dark {
   --color-accent-hover: #A3BCAD;
   --color-surface-hover: #353535;
 }
