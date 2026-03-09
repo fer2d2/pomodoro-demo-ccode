@@ -1,11 +1,14 @@
 "use client";
 
+import { useState } from "react";
 import { Button } from "@/components/Button";
+import { TabBar } from "@/components/TabBar";
 import { useTheme } from "@/hooks/useTheme";
-import { Play, RotateCcw, Settings, Moon, Sun } from "lucide-react";
+import { Play, RotateCcw, Settings, Moon, Sun, Clock, Coffee } from "lucide-react";
 
 export default function DesignSystemPage() {
   const { theme, toggle } = useTheme();
+  const [activeTab, setActiveTab] = useState("focus");
 
   return (
     <main className="min-h-screen bg-bg-page px-spacing-xl py-spacing-3xl font-body">
@@ -35,6 +38,25 @@ export default function DesignSystemPage() {
             <Button variant="ghost" icon={Settings}>Settings</Button>
             <Button variant="ghost">Ghost</Button>
           </div>
+        </section>
+
+        <section className="mt-spacing-3xl">
+          <h2 className="mb-spacing-sm font-display text-xl text-text-primary">
+            Tabs
+          </h2>
+          <p className="mb-spacing-lg text-md text-text-secondary">
+            Tab bar with active and inactive states
+          </p>
+
+          <TabBar
+            items={[
+              { value: "focus", label: "Focus", icon: Clock },
+              { value: "break", label: "Break", icon: Coffee },
+              { value: "settings", label: "Settings", icon: Settings },
+            ]}
+            value={activeTab}
+            onChange={setActiveTab}
+          />
         </section>
       </div>
     </main>
